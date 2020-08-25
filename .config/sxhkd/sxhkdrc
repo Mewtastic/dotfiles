@@ -34,21 +34,21 @@ super + {_,shift} + e
 super + {_,shift} + w
 	{emacs, nm-connection-editor}
 
-# Lxappearance
-super + a
-	lxappearance
+# Audio software + lxappearance
+super + a: {a,shift + a, l}
+	{audacity, lxappearance, lmms}
 
 # Libre Office
 super + o
 	libreoffice
 
-# Audio Software
-super + {_,shift} + z
-	{audacity, lmms}
-
 # Dwarf Fortress
 super + shift + f
 	dwarffortress
+
+# Lxappearance
+super + z
+	lxappearance
 
 #
 # bspwm hotkeys
