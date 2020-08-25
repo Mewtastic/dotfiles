@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+from astral import LocationInfo
+import datetime
+from astral.sun import sun
+import subprocess
+import time
+import pytz
+from typing import Dict
+
+tz=pytz.timezone('US/Pacific')
+
+def change_wallpaper(style: str):
+    wallpaper_file = "/home/mewtastic/Pictures/Wallpapers"
+    file_map: Dict[str, str] = {"night": "night.jpg", "day": "day.jpg"}
+    if style in file_map.keys():
+        wallpaper_file = f"{wallpaper_file}/{file_map[style]}"
+    else:
+        wallpaper_file = f"{wallpaper_file}/{file_map['night']}"
+    subprocess.run(["/usr/bin/xwallpaper", "--zoom", f"{wallpaper_file}"])
+
+if __name__ == "__main__":
+    city = LocationInfo("Portland", "Oregon", "US/Pacific", 45.515, -122.679)
+    s = sun(city.observer, date=datetime.datetime.today())
+    # Available times for sun = sunrise, noon, sunset, dusk
+
+    while True:
+        # Day approx: 8:00-19:59 thus it occurs on sunrise and before sunset
+        if datetime.datetime.now().replace(tzinfo=tz) >= s["sunrise"] and datetime.datetime.now().replace(tzinfo=tz) < s["sunset"]:
+            change_wallpaper("day")
+
+        # Night approx: 20:00-24:00 - 7:59 thus it occurs on sunset OR before sunrise
+        elif datetime.datetime.now().replace(tzinfo=tz) >= s["sunset"] or datetime.datetime.now().replace(tzinfo=tz) < s["sunrise"]:
+            change_wallpaper("night")
+        time.sleep(300)
