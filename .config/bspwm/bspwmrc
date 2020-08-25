@@ -1,0 +1,59 @@
+#! /bin/sh
+# BSPWMRC
+
+# Clear rules for new ones to be defined
+bspc -r "*"
+
+# Fix the X cursor
+xsetroot -cursor_name left_ptr &
+
+# Initialize keybinds
+sxhkd &
+
+#################################################################
+#                        STARTUP                                #
+#################################################################
+
+# Set wallpaper
+xwallpaper --zoom ~/Pictures/Wallpapers/plane.jpg
+
+# Start picom
+picomstart &
+
+# Start Polybar
+polybarstart &
+
+# Start bluetooth
+bluetoothctl -- power on &
+
+# Start pidswallow (Window swallowing)
+swallow &
+
+# JAVA and intellij-idea reparenting fix
+wmname LG3D
+
+#################################################################
+#                MONITOR AND WINDOW BEHAVIOR                    #
+#################################################################
+
+# Monitor Configuration
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+# WM Cosmetic Configuration
+bspc config border_width         2
+bspc config window_gap           6
+
+bspc config split_ratio          0.53
+bspc config borderless_monocle   false
+bspc config gapless_monocle      true
+
+# WM Behavior Configuration
+bspc config click_to_focus none
+bspc config focus_follows_pointer true
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+
+# Rules
+bspc rule -a Zathura state=tiled
+bspc rule -a Emacs state=tiled
+bspc rule -a hl2_linux state=tiled
