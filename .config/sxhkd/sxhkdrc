@@ -71,7 +71,7 @@ super + m
 	bspc desktop -l next
 
 # Rotate tree
-super + shift + {a,d}
+super + shift + {d,a}
     bspc node @/ -C {forward,backward}
 
 #
