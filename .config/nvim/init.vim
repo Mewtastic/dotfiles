@@ -1,3 +1,4 @@
+set smartcase
 set expandtab
 set nu
 syntax enable
