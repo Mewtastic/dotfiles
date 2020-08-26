@@ -1,3 +1,4 @@
+set expandtab
 set nu
 syntax enable
 set autoindent
