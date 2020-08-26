@@ -35,8 +35,8 @@ super + {_,shift} + w
 	{emacs, nm-connection-editor}
 
 # Audio software + lxappearance
-super + a: {a,shift + a, l}
-	{audacity, lxappearance, lmms}
+super + a: {a,l}
+	{audacity, lmms}
 
 # Libre Office
 super + o
