@@ -7,8 +7,10 @@
 
 PS1='[\u@\h \W]\$ '
 
-PATH="$HOME/.local/bin${PATH:+:${PATH}}"
-EDITOR="nvim"
+export TERM=alacritty
+export PATH="$HOME/.local/bin${PATH:+:${PATH}}"
+export EDITOR="nvim"
+export HISTCONTROL=ignoreboth
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
@@ -40,10 +42,10 @@ ex ()
 # aliases
 alias p="sudo pacman"
 alias y="yay"
-alias ..="cd .."
 alias v="nvim"
 alias vim="nvim"
 alias mkd="mkdir -pv"
+alias ..="cd .."
 alias yt="youtube-dl --add-metadata -ic"
 alias yta="youtube-dl --add-metadata -xic"
 alias rm="rm -vi"
