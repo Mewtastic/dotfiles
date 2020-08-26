@@ -217,6 +217,9 @@ XF86Search
 XF86LaunchA
 	alacritty -e bashtop
 
+XF86Explorer
+	alacritty -e ncmpcpp
+
 # Take Screenshots
 Print
 	scrot ~/Pictures/scrot/screenshot.png

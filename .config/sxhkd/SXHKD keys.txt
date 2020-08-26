@@ -57,5 +57,6 @@ mod mouse_middle	=	Resize along just x or y axis
 mod mouse_right		=	Resize x and y axis
 XF86Search		=	Open file manager
 XF86LaunchA		=	Open system monitor
+XF86Explorer		=	Open music player
 Print			=	Take a screenshot of current workspace
 alt + Print		=	Take a screenshot of selected window
