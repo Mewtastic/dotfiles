@@ -1,2 +1,4 @@
 * dotfiles
 My dotfiles! Managed using the git bare repository method.
+
+[[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/Desktop.png]]
