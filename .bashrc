@@ -40,6 +40,7 @@ ex ()
 # aliases
 alias p="sudo pacman"
 alias y="yay"
+alias ..="cd .."
 alias v="nvim"
 alias vim="nvim"
 alias mkd="mkdir -pv"
