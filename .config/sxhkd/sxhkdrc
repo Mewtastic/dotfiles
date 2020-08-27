@@ -215,7 +215,7 @@ XF86Search
 	alacritty -e ranger
 
 XF86LaunchA
-	alacritty -e bashtop
+	alacritty -e bpytop
 
 XF86Explorer
 	alacritty -e ncmpcpp
