@@ -155,6 +155,9 @@ super + {Left,Down,Up,Right}
 # Change window gap
 super + {equal, minus}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 2 ))
+# Set window gaps to default
+super + shift + equal
+        bspc config -d focused window_gap 4
 
 #
 # mouse bindings

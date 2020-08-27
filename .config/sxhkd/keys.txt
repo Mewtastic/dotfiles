@@ -53,6 +53,7 @@ mod ctrl shift space	=	Calcel window preselection for workspace
 mod arrow_keys		=	Move a floating window
 mod -			=	Decrease window gaps
 mod =			=	Increase window gaps
+mod shift =             =       Set window gaps to default
 mod mouse_left		=	Switch tiled windows move floating windows
 mod mouse_middle	=	Resize along just x or y axis
 mod mouse_right		=	Resize x and y axis
