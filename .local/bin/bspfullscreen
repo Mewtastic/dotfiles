@@ -2,8 +2,8 @@
 # Simple script to toggle a node to fullscreen mode in bspwm
 if [ -z "$(bspc query -N -n .focused.fullscreen -d focused)" ]; then
   bspc node focused.tiled -t fullscreen
-  $HOME/.local/bin/bsphide
+  #$HOME/.local/bin/bsphide
 else
   bspc node focused.fullscreen -t tiled
-  $HOME/.local/bin/bspunhide
+  #$HOME/.local/bin/bspunhide
 fi
