@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	rofi -show drun -show-icons -theme materia-dark-imitation
+	rofi -show drun -show-icons -theme dracula
 
 # Open firefox/blender
 super + {_,shift} + b
@@ -48,7 +48,7 @@ super + shift + f
 
 # Asthetic
 super + {_,shift} + u
-	{sxiv -ft ~/Pictures/Wallpapers/*.jpg, lxappearance}
+	{sxiv -t ~/Pictures/Wallpapers/*.jpg, lxappearance}
 
 #
 # bspwm hotkeys
