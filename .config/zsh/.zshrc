@@ -16,7 +16,6 @@ _comp_options+=(globdots)
 
 # Vi mode
 bindkey -v
-export KEYTIMEOUT=1
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
