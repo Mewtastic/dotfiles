@@ -46,17 +46,17 @@ super + o
 super + shift + f
 	dwarffortress
 
-# Lxappearance
-super + z
-	lxappearance
+# Asthetic
+super + {_,shift} + u
+	{sxiv -ft ~/Pictures/Wallpapers/*.jpg, lxappearance}
 
 #
 # bspwm hotkeys
 #
 
 # quit/restart bspwm
-super + shift + q: {s,r,shift + s, shift + r}
-	{bspc quit,bspc wm -r,shutdown now, reboot}
+super + shift + {q,r}
+	bspc {quit,wm -r}
 
 # Run custom lockscreen script
 super + x
