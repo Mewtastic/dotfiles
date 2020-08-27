@@ -1,6 +1,8 @@
 alias p="sudo pacman"
 alias y="yay"
 alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
 alias ..="cd .."
 alias yt="youtube-dl --add-metadata -ic"
 alias yta="youtube-dl --add-metadata -xic"
