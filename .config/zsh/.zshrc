@@ -93,3 +93,6 @@ bindkey -s '^o' 'rangercd\n'
 # pidswallow: I use alacritty so it needs to be as close to the end as possible
 [ -n "$DISPLAY" ]  && command -v xdo >/dev/null 2>&1 && xdo id > /tmp/term-wid-"$$"
 trap "( rm -f /tmp/term-wid-"$$" )" EXIT HUP
+
+# Syntax highlighting
+source /home/mewtastic/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
