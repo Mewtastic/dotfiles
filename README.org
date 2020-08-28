@@ -25,4 +25,4 @@ All my software I use is open source when possible. All the software listed belo
 https://github.com/Mewtastic/sxiv
 
 * My Configuration so far...
-[[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/screenshot_006.png]]
+[[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/screenshot_001.png]]
