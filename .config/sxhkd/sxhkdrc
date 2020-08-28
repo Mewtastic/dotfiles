@@ -7,7 +7,7 @@ super + Return
 	alacritty
 
 # program launcher
-super + d
+super + shift + d
 	rofi -show drun -show-icons -theme dracula
 
 # Open firefox/blender
@@ -35,7 +35,7 @@ super + {_,shift} + w
 	{emacs, nm-connection-editor}
 
 # Audio software + lxappearance
-super + a: {a,l}
+super + shift + a: {a,l}
 	{audacity, lmms}
 
 # Libre Office
@@ -71,7 +71,7 @@ super + m
 	bspc desktop -l next
 
 # Rotate tree
-super + shift + {d,a}
+super + {d,a}
     bspc node @/ -C {forward,backward}
 
 #
