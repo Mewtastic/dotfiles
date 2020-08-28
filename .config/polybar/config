@@ -55,8 +55,8 @@ font-2 = FontAwesome5Free:style=Solid:antialias=true;2
 font-3 = FontAwesome5Brands:style=Solid:antialias=true;2
 
 modules-left = bspwm xwindow
-modules-center = updates-pacman-aurhelper
-modules-right = pulseaudio memory cpu battery temperature date
+modules-center = mpd
+modules-right = updates-pacman-aurhelper pulseaudio memory cpu battery temperature date
 
 tray-position = false
 tray-padding = 0
@@ -99,6 +99,18 @@ label-empty-padding = 2
 
 ; Separator in between workspaces
 ; label-separator = |
+
+[module/mpd]
+type = internal/mpd
+
+; Host where mpd is running (either ip or domain name)
+; Can also be the full path to a unix socket where mpd is running.
+host = 127.0.0.1
+port = 6600
+
+; Seconds to sleep between progressbar/song timer sync
+; Default: 1
+interval = 2
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -152,13 +164,19 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume =  <label-volume>
+format-volume = <ramp-volume> <label-volume>
 format-volume-underline = #A9A9A9
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = Muted
+label-muted =  Muted
 label-muted-foreground = #666
+
+; Only applies if <ramp-volume> is used
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
