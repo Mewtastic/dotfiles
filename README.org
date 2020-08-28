@@ -2,4 +2,4 @@
 My dotfiles! Managed using the git bare repository method.
 
 * My Configuration so far...
-[[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/Desktop.png]]
+[[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/screenshot_006.png]]
