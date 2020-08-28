@@ -1,7 +1,6 @@
 # Enable colors and customize prompt
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-
 PS2=">"
 
 # History
@@ -97,4 +96,4 @@ bindkey -s '^o' 'rangercd\n'
 trap "( rm -f /tmp/term-wid-"$$" )" EXIT HUP
 
 # Syntax highlighting
-source /home/mewtastic/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/mewtastic/.config/zsh/plugins/syntax/zsh-syntax-highlighting.zsh
