@@ -95,5 +95,10 @@ bindkey -s '^o' 'rangercd\n'
 [ -n "$DISPLAY" ]  && command -v xdo >/dev/null 2>&1 && xdo id > /tmp/term-wid-"$$"
 trap "( rm -f /tmp/term-wid-"$$" )" EXIT HUP
 
+# Plugins
+
+# You should use...
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
+
 # Syntax highlighting
-source /home/mewtastic/.config/zsh/plugins/syntax/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
