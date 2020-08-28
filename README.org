@@ -1,5 +1,28 @@
 * dotfiles
 My dotfiles! Managed using the git bare repository method.
 
+** Software I use
+All my software I use is open source when possible. All the software listed below is open source. I won't reccomend proprietary software to anybody.
+- Window Manager: BSPWM
+- Keybinds: sxhkd
+- Status bar: Polybar
+- Terminal: Alacritty
+- Shell: Zsh
+- Text Editor: NeoVim
+- IDE: Spacemacs (I'm going to switch to something better soon)
+- Browser: Firefox
+- Pdf reading: Zathura
+- Office suite: Libre Office
+- Image Viewer: sxiv
+- Music: mpd & ncmpcpp
+- File Manager: Ranger
+- System Monitor: Bpytop
+- Image editing: GIMP
+
+** Personal build of sxiv
+  Sxiv is customized using some scripts and xresources, but you change keybinds by configuring the source code, so I store all of my configuration in there.
+  My build is also a ahead of the git version as I've merged some upcoming pull requests with my build.
+https://github.com/Mewtastic/sxiv
+
 * My Configuration so far...
 [[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/screenshot_006.png]]
