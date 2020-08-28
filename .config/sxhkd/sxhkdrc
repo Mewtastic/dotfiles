@@ -232,3 +232,7 @@ alt + Print
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# Show a help menu with rofi
+super + slash
+        sxhkd-help
