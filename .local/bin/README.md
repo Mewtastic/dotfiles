@@ -56,7 +56,7 @@ starts pidswallow
 ## sxhkd-help
 Shows sxhkd keybinds with rofi
 ### Dependencies
-*       rofi
+* rofi
 #### More Information
 Thanks to to *My Take On Tech* for their amazing website and this code!
 https://my-take-on.tech/2020/07/03/some-tricks-for-sxhkd-and-bspwm/#show-a-help-menu-using-rofi
