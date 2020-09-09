@@ -2,7 +2,7 @@
 My dotfiles! Managed using the git bare repository method.
 
 ** Software I use
-All my software I use is open source when possible. All the software listed below is open source. I won't reccomend proprietary software to anybody.
+All my software I use is open source when possible. All the software listed below is open source. I won't recommend proprietary software to anybody.
 - Window Manager: BSPWM
 - Keybinds: sxhkd
 - Status bar: Polybar
