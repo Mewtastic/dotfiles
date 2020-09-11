@@ -47,9 +47,8 @@ Sticky note function for BSPWM
 ### dependencies:
 * Alacritty
 #### More Information
-Requires multiple configuration changes to BSPWM, Alacritty, and your default shell
-See changes: https://github.com/Mewtastic/dotfiles/commit/77b897d7c00213f18aa5cb376014883efec20bd1
-Found on https://github.com/tom-on-the-internet/sticky-notes
+See additional required changes: https://github.com/Mewtastic/dotfiles/commit/77b897d7c00213f18aa5cb376014883efec20bd1
+*Thanks to Tom-On-The-Internet for the code https://github.com/tom-on-the-internet/sticky-notes*
 
 ## picomstart
 Kills previous instances of picom and starts it again
