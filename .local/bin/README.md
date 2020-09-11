@@ -45,7 +45,7 @@ Reverts network to how it was before the netfix command was run
 ## note
 Sticky note function for BSPWM
 ### dependencies:
-*       Alacritty
+* Alacritty
 #### More Information
 Requires multiple configuration changes to BSPWM, Alacritty, and your default shell
 Found on https://github.com/tom-on-the-internet/sticky-notes
