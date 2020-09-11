@@ -42,6 +42,14 @@ Bypasses arp poisoning. For personal reasons
 ## netrevert
 Reverts network to how it was before the netfix command was run
 
+## note
+Sticky note function for BSPWM
+### dependencies:
+*       Alacritty
+#### More Information
+Requires multiple configuration changes to BSPWM, Alacritty, and your default shell
+Found on https://github.com/tom-on-the-internet/sticky-notes
+
 ## picomstart
 Kills previous instances of picom and starts it again
 

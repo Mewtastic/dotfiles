@@ -1,3 +1,10 @@
+# If a sticky note set up sticky note prompt and exit file
+if [[ $STICKY_NOTE ]]; then
+  PS1=
+  cat "$HOME/.cache/sticky-note/note"
+  return
+fi
+
 # Enable colors and customize prompt
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "

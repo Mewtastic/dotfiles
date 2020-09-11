@@ -1,0 +1,8 @@
+#!/bin/sh
+
+CONFIG_FILE="$HOME/.config/alacritty/sticky-notes.yml"
+STICKY_NOTE="$HOME/.cache/sticky-note/note"
+
+echo "$@" > "$STICKY_NOTE"
+
+alacritty --config-file "$CONFIG_FILE" &

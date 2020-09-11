@@ -63,3 +63,4 @@ bspc config remove_unplugged_monitors true
 bspc rule -a Zathura state=tiled
 bspc rule -a Emacs state=tiled
 bspc rule -a hl2_linux state=tiled
+bspc rule -a sticky-note state=floating sticky=on border=off
