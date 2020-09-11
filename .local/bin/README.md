@@ -48,6 +48,7 @@ Sticky note function for BSPWM
 * Alacritty
 #### More Information
 Requires multiple configuration changes to BSPWM, Alacritty, and your default shell
+See changes: https://github.com/Mewtastic/dotfiles/commit/77b897d7c00213f18aa5cb376014883efec20bd1
 Found on https://github.com/tom-on-the-internet/sticky-notes
 
 ## picomstart
