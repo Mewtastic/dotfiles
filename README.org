@@ -25,4 +25,8 @@ All my software I use is open source when possible. All the software listed belo
 https://github.com/Mewtastic/sxiv
 
 * My Configuration so far...
-[[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/screenshot_001.png]]
+[[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/Screen-default.png]]
+[[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/Screen-gaps.png]]
+
+** New sticky note feature!
+[[https://github.com/Mewtastic/dotfiles/blob/master/.screenshots/Screen-notes.png]]
