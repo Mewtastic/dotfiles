@@ -56,7 +56,7 @@ font-3 = FontAwesome5Brands:style=Solid:antialias=true;2
 
 modules-left = bspwm xwindow
 modules-center = mpd
-modules-right = updates-pacman-aurhelper pulseaudio memory cpu battery temperature date
+modules-right = pulseaudio memory cpu battery temperature date
 
 tray-position = false
 tray-padding = 0
