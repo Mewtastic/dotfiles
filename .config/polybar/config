@@ -28,7 +28,7 @@ alert = #bd2c40
 [bar/mewtastic]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 22
+height = 26
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -49,7 +49,7 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "FontAwesome:size=9;1"
+font-0 = "FontAwesome:size=11;1"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FontAwesome5Free:style=Solid:antialias=true;2
 font-3 = FontAwesome5Brands:style=Solid:antialias=true;2
