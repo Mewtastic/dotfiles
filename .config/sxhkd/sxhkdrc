@@ -54,6 +54,10 @@ super + {_,shift} + u
 super + i
         alacritty -e ranger
 
+# Bpytop
+super + shift + i
+        alacritty -e bpytop
+
 #
 # bspwm hotkeys
 #
