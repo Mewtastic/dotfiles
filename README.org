@@ -20,8 +20,8 @@ All my software I use is open source when possible. All the software listed belo
 - Image editing: GIMP
 
 ** Personal build of sxiv
-  Sxiv is customized using some scripts and xresources, but you change keybinds by configuring the source code, so I store all of my configuration in there.
-  My build is also a ahead of the git version as I've merged some upcoming pull requests with my build.
+  Sxiv is customized using some scripts and xresources, but you change keybinds by configuring the source code, so I store all of my configuration in a fork of the official sxiv repository.
+  My build is also a ahead of the git version of sxiv as I've merged some upcoming pull requests with my build.
 https://github.com/Mewtastic/sxiv
 
 * My Configuration so far...
