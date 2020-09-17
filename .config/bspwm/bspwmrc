@@ -15,7 +15,7 @@ sxhkd &
 #################################################################
 
 # Set wallpaper
-xwallpaper --zoom ~/.config/wall.jpg &
+xwallpaper --zoom ~/.config/wall.png &
 
 # Start picom
 picomstart &
