@@ -50,6 +50,10 @@ super + shift + f
 super + {_,shift} + u
 	{sxiv -t ~/Pictures/Wallpapers/*.jpg, lxappearance}
 
+# Ranger
+super + i
+        alacritty -e ranger
+
 #
 # bspwm hotkeys
 #
@@ -192,10 +196,10 @@ XF86AudioMicMute
 
 # Screen Brightness
 XF86MonBrightnessUp 
-    xbacklight -inc 5
+    xbacklight -perceived -inc 5
 
 XF86MonBrightnessDown
-    xbacklight -dec 5
+    xbacklight -perceived -dec 5
 
 # Media Player Controls
 XF86AudioPlay
@@ -214,20 +218,15 @@ XF86AudioStop
      playerctl stop
 
 # Extra Thinkpad Media key functionality
-XF86Search
-	alacritty -e ranger
 
-XF86LaunchA
-	alacritty -e bpytop
-
-XF86Explorer
-	alacritty -e ncmpcpp
+XF86Favorites
+        alacritty -e ncmpcpp
 
 # Take Screenshots
 Print
-	scrot ~/Pictures/scrot/screenshot.png
+	scrot ~/Pictures/screenshots/screenshot.png
 alt + Print
-	scrot -s ~/Pictures/scrot/screenshot.png
+	scrot -s ~/Pictures/screenshots/screenshot.png
 
 # make sxhkd reload its configuration files:
 super + Escape
