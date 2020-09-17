@@ -207,19 +207,19 @@ XF86MonBrightnessDown
 
 # Media Player Controls
 XF86AudioPlay
-    playerctl play-pause
+        mpc toggle
 
 XF86AudioPause
-    playerctl pause
+        mpc pause
 
 XF86AudioNext
-    playerctl next
+        mpc next
 
 XF86AudioPrev
-     playerctl previous
+        mpc prev
 
 XF86AudioStop
-     playerctl stop
+        mpc stop
 
 # Extra Thinkpad Media key functionality
 
