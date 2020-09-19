@@ -23,9 +23,6 @@ picomstart &
 # Start Polybar
 polybarstart &
 
-# Start bluetooth
-bluetoothctl -- power on &
-
 # Start pidswallow (Window swallowing)
 swallow &
 
