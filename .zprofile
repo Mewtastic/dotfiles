@@ -14,3 +14,8 @@ export ZDOTDIR="$HOME/.config/zsh"
 
 # Turn off system bell
 # xset -b
+
+# Start an X environment
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx
+fi
