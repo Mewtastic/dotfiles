@@ -200,10 +200,10 @@ XF86AudioMicMute
 
 # Screen Brightness
 XF86MonBrightnessUp 
-    xbacklight -perceived -inc 5
+    xbacklight -inc 2
 
 XF86MonBrightnessDown
-    xbacklight -perceived -dec 5
+    xbacklight -dec 2
 
 # Media Player Controls
 XF86AudioPlay
