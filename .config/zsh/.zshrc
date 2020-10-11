@@ -104,6 +104,9 @@ trap "( rm -f /tmp/term-wid-"$$" )" EXIT HUP
 
 # Plugins
 
+# Auto suggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # You should use...
 source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 
