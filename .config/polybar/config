@@ -16,26 +16,23 @@
 ;
 ;==========================================================
 
-[colors]
-background = #D90F0F0F
-background-alt = #444
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #0BDA51
-secondary = #e60053
-alert = #bd2c40
+; Include Files
+include-file = ~/.config/polybar/colors
+include-file = ~/.config/polybar/modules
 
 [bar/mewtastic]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 26
+height = 24
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
 fixed-center = true
+bottom = false
+separator =
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${color.bground}
+foreground = ${color.fground}
 
 line-size = 0
 line-color = #f00
@@ -44,19 +41,21 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 1
+padding-right = 0
 
-module-margin-left = 1
-module-margin-right = 2
+module-margin-left = 0
+module-margin-right = 0
 
-font-0 = "FontAwesome:size=11;1"
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+; Fonts
+font-0 = PowerlineSymbols:size=19;5
+font-1 = FreeSans:size=11:0
 font-2 = FontAwesome5Free:style=Solid:antialias=true;2
 font-3 = FontAwesome5Brands:style=Solid:antialias=true;2
 
-modules-left = bspwm xwindow
+; Module layout
+modules-left = bspwm left1 xwindow left2 updates-pacman-aurhelper left3
 modules-center = mpd
-modules-right = pulseaudio memory cpu battery temperature date
+modules-right = right4 pulseaudio right2 memory right1 cpu right3 battery right2 temperature right1 date
 
 tray-position = false
 tray-padding = 0
@@ -73,182 +72,66 @@ enable-ipc = true
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-format-overline = #0BDA51
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+;; MODULES
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-[module/bspwm]
-type = internal/bspwm
+[module/left1]
+type = custom/text
+content-background = ${color.purple}
+content-foreground = ${color.bground}
+content = "%{T3} %{T-}"
 
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+[module/left2]
+type = custom/text
+content-background = ${color.shade3}
+content-foreground = ${color.purple}
+content = "%{T3} %{T-}"
 
-label-occupied = %index%
-label-occupied-padding = 2
+[module/left3]
+type = custom/text
+content-background = ${color.bground}
+content-foreground = ${color.shade3}
+content = "%{T3} %{T-}"
 
-label-urgent = %index%!
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+#+++++++++++++++++++++++++++++++++++++++
 
-label-empty = %index%
-label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+[module/right1]
+type = custom/text
+content-background = ${color.shade2}
+content-foreground = ${color.shade1}
+content = "%{T2}  %{T-}"
 
-; Separator in between workspaces
-; label-separator = |
+[module/right2]
+type = custom/text
+content-background = ${color.shade3}
+content-foreground = ${color.shade2}
+content = "%{T2}  %{T-}"
 
-[module/mpd]
-type = internal/mpd
+[module/right3]
+type = custom/text
+content-background = ${color.shade1}
+content-foreground = ${color.shade3}
+content = "%{T2}  %{T-}"
 
-; Host where mpd is running (either ip or domain name)
-; Can also be the full path to a unix socket where mpd is running.
-host = 127.0.0.1
-port = 6600
-
-; Seconds to sleep between progressbar/song timer sync
-; Default: 1
-interval = 2
-
-[module/xbacklight]
-type = internal/xbacklight
-
-format = <label> <bar>
-label = BL
-
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = ""
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
-label = %percentage:2%%
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0BDA51
-label = %percentage_used%%
-
-[module/date]
-type = internal/date
-interval = 1
-
-date = %m/%d/%Y
-date-alt = %a %b %d, %Y
-
-time = %I:%M:%S %p
-time-alt = %I:%M:%S %p
-
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
-
-label = %date% %time%
-
-[module/pulseaudio]
-type = internal/pulseaudio
-
-format-volume = <ramp-volume> <label-volume>
-format-volume-underline = #A9A9A9
-label-volume = %percentage%%
-label-volume-foreground = ${root.foreground}
-
-label-muted =  Muted
-label-muted-foreground = #666
-
-; Only applies if <ramp-volume> is used
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-foreground = ${colors.foreground-alt}
-
-[module/battery]
-type = internal/battery
-battery = BAT0
-adapter = ADP1
-full-at = 98
-
-format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
-
-format-discharging = <animation-discharging> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
-
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
-
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-foreground = ${colors.foreground-alt}
-animation-discharging-framerate = 750
-
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-base-temperature = 40
-warn-temperature = 80
-
-format = <ramp> <label>
-format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
-
-label = %temperature-c%
-label-warn = %temperature-c%
-label-warn-foreground = ${colors.secondary}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
-
-[module/updates-pacman-aurhelper]
-type = custom/script
-exec = ~/.config/polybar/polybar-scripts/updates-pacman-aurhelper.sh
-interval = 600
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+[module/right4]
+type = custom/text
+content-background = ${color.bground}
+content-foreground = ${color.shade3}
+content = "%{T2}  %{T-}"
 
 [settings]
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
+
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
 
 [global/wm]
 margin-top = 0
 margin-bottom = 0
-
-; vim:ft=dosini

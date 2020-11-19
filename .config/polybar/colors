@@ -1,0 +1,24 @@
+[color]
+
+; Active Shade 
+shade1 = #8bcbfd
+shade2 = #FF79C6
+shade3 = #50fa7b
+
+;; Active Colors
+bground = #282A36
+fground = #F8F8F2
+fground-alt = #666
+accent = #1E88E5
+modulefg = #282a36
+modulefg-alt = #f7f7f7
+
+;; Other
+trans = #00000000
+white = #FFFFFF
+black = #000000
+
+;; Material Colors
+red = #FF5555
+purple = #BD93F9
+yellow = #F1FA8C

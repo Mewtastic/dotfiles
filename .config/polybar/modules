@@ -1,0 +1,165 @@
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+label-foreground = ${color.bground}
+format-background = ${color.purple}
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %index%
+label-focused-foreground = ${color.purple}
+;label-focused-background = ${color.purple}
+label-focused-padding = 2
+
+label-occupied = %index%
+label-occupied-padding = 2
+
+label-urgent = %index%!
+label-urgent-foreground = ${color.red}
+label-urgent-padding = 2
+
+label-empty = %index%
+label-empty-foreground = ${color.fground-alt}
+label-empty-padding = 2
+
+[module/mpd]
+type = internal/mpd
+
+; Host where mpd is running (either ip or domain name)
+; Can also be the full path to a unix socket where mpd is running.
+host = 127.0.0.1
+port = 6600
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label> <bar>
+label = BL
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #fff
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${color.fground-alt}
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = ""
+format-prefix-foreground = ${color.modulefg}
+format-background = ${color.shade1}
+label = %percentage:2%%
+label-foreground = ${color.modulefg}
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${color.modulefg}
+format-background = ${color.shade2}
+label = %percentage_used%%
+label-foreground = ${color.modulefg}
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = %m/%d/%Y
+date-alt = %a %b %d, %Y
+
+time = %I:%M:%S %p 
+time-alt = %I:%M:%S %p 
+
+format-prefix = " "
+format-prefix-foreground = ${color.modulefg}
+format-background = ${color.shade1}
+
+label = %date% %time%
+label-foreground = ${color.modulefg}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <ramp-volume> <label-volume>
+format-background = ${color.shade1}
+label-volume = %percentage%%
+label-volume-foreground = ${color.modulefg}
+format-volume-background = ${color.shade3}
+
+label-muted =  Muted
+label-muted-foreground = ${color.modulefg}
+format-muted-background = ${color.shade3}
+
+; Only applies if <ramp-volume> is used
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${color.modulefg}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 99
+
+format-charging = <animation-charging> <label-charging>
+format-charging-background = ${color.shade3}
+label-charging-foreground = ${color.modulefg}
+
+format-discharging = <animation-discharging> <label-discharging>
+format-discharging-background = ${color.shade3}
+label-discharging-foreground = ${color.modulefg}
+
+label-full = 100%
+format-full-prefix = " "
+format-full-prefix-foreground = ${color.modulefg}
+format-full-background = ${color.shade3}
+label-full-foreground = ${color.modulefg}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${color.modulefg}
+animation-charging-framerate = 750
+
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-foreground = ${color.modulefg}
+animation-discharging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+base-temperature = 40
+warn-temperature = 80
+
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+
+label = %temperature-c%
+label-foreground = ${color.modulefg}
+format-background = ${color.shade2}
+label-warn = %temperature-c%
+label-warn-foreground = ${color.black}
+format-warn-background = ${color.shade2}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${color.modulefg}
+
+[module/updates-pacman-aurhelper]
+type = custom/script
+exec = ~/.config/polybar/polybar-scripts/updates-pacman-aurhelper.sh
+interval = 120
+format-prefix = " "
+format-prefix-foreground = ${color.modulefg}
+format-background = ${color.shade3}
+format-foreground = ${color.modulefg}
