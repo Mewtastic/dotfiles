@@ -52,7 +52,7 @@ super + shift + f
 
 # Asthetic
 super + {_,shift} + u
-	{sxiv -t ~/Pictures/Wallpapers/*.png, lxappearance}
+	{sxiv -dt ~/Pictures/Wallpapers/*.png, lxappearance}
 
 # Ranger
 super + i
