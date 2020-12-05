@@ -30,7 +30,7 @@ swallow &
 xrdb ~/.Xresources
 
 # JAVA and intellij-idea reparenting fix
-wmname LG3D &
+#wmname LG3D &
 
 #################################################################
 #                MONITOR AND WINDOW BEHAVIOR                    #
