@@ -24,7 +24,7 @@ super + {_,shift} + g
 
 # Open up chat platforms
 super + {_,shift} + c
-	{discord-canary, hexchat}
+	{firefox --new-window https://discord.com/app, hexchat}
 
 # Games
 super + shift + {s,m}
