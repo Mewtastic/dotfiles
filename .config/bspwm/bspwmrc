@@ -26,6 +26,9 @@ polybarstart &
 # Start pidswallow (Window swallowing)
 swallow &
 
+# Load in Xresources
+xrdb ~/.Xresources
+
 # JAVA and intellij-idea reparenting fix
 wmname LG3D &
 
