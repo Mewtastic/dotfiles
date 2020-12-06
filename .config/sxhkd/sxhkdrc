@@ -30,9 +30,9 @@ super + {_,shift} + c
 super + shift + {s,m}
 	{steam, multimc}
 
-# Emulation
-super + {_,shift} + e
-	{retroarch, dosbox}
+# Scorched Earth
+super + e
+	dosbox -c "mount C ~/Games/SCORCH" -c "C:" -c "SCORCH"
 
 # Emacs and Network Configuration
 super + {_,shift} + w
