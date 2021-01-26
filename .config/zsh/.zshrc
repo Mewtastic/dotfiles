@@ -7,8 +7,9 @@ fi
 
 # Enable colors and customize prompt
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%3~%{$fg[red]%}]%{$reset_color%}$%b "
 PS2=">"
+RPS1="%F{yellow}%(?.:%).:()%f"
 
 # History
 HISTFILE=~/.cache/zsh/history
