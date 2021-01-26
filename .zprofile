@@ -16,6 +16,9 @@ export ZDOTDIR="$HOME/.config/zsh"
 # xset -b
 
 # Start an X environment
+# To remain logged in after logging out of an X environment
+# use startx instead of exec startx
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx
+#  startx
 fi
