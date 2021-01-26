@@ -91,7 +91,7 @@ rangercd () {
     if [ -f "$tmp" ]; then
         dir="$(cat "$tmp")"
         rm -f "$tmp"
-        [ --datadir="$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"                                               
+        [ --datadir="$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
 bindkey -s '^o' 'rangercd\n'
@@ -100,7 +100,7 @@ bindkey -s '^o' 'rangercd\n'
 [ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
 
 # pidswallow: I use alacritty so it needs to be as close to the end as possible
-[ -n "$DISPLAY" ]  && command -v xdo >/dev/null 2>&1 && xdo id > /tmp/term-wid-"$$"
+[ -n "$DISPLAY" ] && command -v xdo >/dev/null 2>&1 && xdo id > /tmp/term-wid-"$$"
 trap "( rm -f /tmp/term-wid-"$$" )" EXIT HUP
 
 # Plugins
