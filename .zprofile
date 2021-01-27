@@ -4,7 +4,7 @@ export PATH="$PATH:$HOME/.local/bin/"
 # Defaults
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export BROWSER="firefox"
+export BROWSER="librewolf"
 export READER="zathura"
 export FILE="ranger"
 

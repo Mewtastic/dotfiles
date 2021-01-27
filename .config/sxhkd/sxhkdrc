@@ -12,7 +12,7 @@ super + shift + d
 
 # Open firefox/blender
 super + {_,shift} + b
-	{firefox, blender}
+	{librewolf, blender}
 
 # Open Mindustry
 super + m
@@ -24,7 +24,7 @@ super + {_,shift} + g
 
 # Open up chat platforms
 super + {_,shift} + c
-	{firefox --new-window https://discord.com/app, hexchat}
+	{librewolf --new-window https://discord.com/app, hexchat}
 
 # Games
 super + shift + {s,m}
