@@ -9,7 +9,7 @@ fi
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%3~%{$fg[red]%}]%{$reset_color%}$%b "
 PS2=">"
-RPS1="%(?.[%F{green}%?%f].[%F{red}%?%f]) %(?.%F{green}:%)%f.%F{red}:(%f)"
+RPS1="%(?.[%F{green}%?%f].[%F{red}%?%f])"
 
 # History
 HISTFILE=~/.cache/zsh/history
