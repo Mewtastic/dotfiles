@@ -9,7 +9,7 @@ fi
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%3~%{$fg[red]%}]%{$reset_color%}$%b "
 PS2=">"
-RPS1="%(?.[%F{green}%?%f].[%F{red}%?%f])"
+RPS1="%(?.[%F{green}%?%f].[%F{red}%?%f])" # Right Prompt: Displays exit status. Green if exit status is 0 and red if otherwise.
 
 # History
 HISTFILE=~/.cache/zsh/history
@@ -80,11 +80,13 @@ zle-line-init() {
 zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+# END OF VI MODE CURSORS
 
 # Edit a line in vim with ctrl-e
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
+# Use Ranger to change dirsctory
 rangercd () {
     tmp="$(mktemp)"
     ranger --choosedir="$tmp" "$@"
