@@ -203,10 +203,10 @@ XF86MonBrightnessDown
 
 # Media Player Controls
 XF86AudioPlay
-        mpc toggle
+        mpc toggle && playerctl play-pause
 
 XF86AudioPause
-        mpc pause
+        mpc pause && playerctl pause
 
 XF86AudioNext
         mpc next
