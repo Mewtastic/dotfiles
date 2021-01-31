@@ -1,5 +1,5 @@
 alias p="paru"
-alias pac="doas pacman"
+alias pac="sudo pacman"
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
