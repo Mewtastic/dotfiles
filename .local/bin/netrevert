@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo arp -d 192.168.0.1
+sudo arp -d 192.168.50.1

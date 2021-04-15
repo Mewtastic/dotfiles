@@ -1,4 +1,4 @@
 #!/bin/sh
-sudo arp -d 192.168.0.1
+sudo arp -d 192.168.50.1
 sleep 2
-sudo ip neigh change 192.168.0.1 lladdr EC:08:6B:D8:C7:D8 dev wlp3s0 nud perm
+sudo ip neigh change 192.168.50.1 lladdr F0:2F:74:9C:85:20 dev wlp3s0 nud perm
