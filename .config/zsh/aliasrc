@@ -17,5 +17,8 @@ alias lla="exa -hal --color=auto"
 alias lal="exa -hal --color=auto"
 alias grep="grep --color=auto"
 
+# Update mirrors
+alias pmu="sudo reflector --verbose --latest 200 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+
 # Dotfile management
 alias config='/usr/bin/git --git-dir=/home/mewtastic/.cfg/ --work-tree=/home/mewtastic'
