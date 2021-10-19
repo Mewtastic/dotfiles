@@ -2,8 +2,8 @@ env:
    STICKY_NOTE: yes
 window:
    dimensions:
-     columns: 20
-     lines: 7
+     columns: 26
+     lines: 8
    padding:
      x: 15
      y: 15
@@ -20,15 +20,16 @@ scrolling:
 font:
   normal:
     family: Source Code Pro
-  size: 12
+  size: 8
 
+custom_cursor_colors: true
 colors:
  primary:
    background: '#ffff88'
    foreground: '#222222'
  cursor:
    text: '#ffff88'
-   cursor: '#ffff88'
+   cursor: '0xffff88'
  selection:
    text: '#ffff88'
    background: '#ffff88'
