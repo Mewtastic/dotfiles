@@ -3,6 +3,6 @@
 CONFIG_FILE="$HOME/.config/alacritty/sticky-notes.yml"
 STICKY_NOTE="$HOME/.cache/sticky-note/note"
 
-bla=$(echo "" | rofi -theme dracula -dmenu -p "Enter Text > "); echo "${bla}" > "$STICKY_NOTE"
+bla=$(echo "" | rofi -theme dracula -dmenu -p "Sticky Note: "); echo "${bla}" > "$STICKY_NOTE"
 
 alacritty --config-file "$CONFIG_FILE" &
