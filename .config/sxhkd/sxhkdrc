@@ -62,6 +62,10 @@ super + i
 super + shift + i
         alacritty -e bpytop
 
+# Make a sticky note
+super + n
+        note
+
 #
 # bspwm hotkeys
 #
